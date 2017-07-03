@@ -17,10 +17,8 @@ import org.junit.Test;
 public class ConcurrentTestRunner {
 	Date startTime;
 	Date endTime;
-	@SuppressWarnings("unchecked")
-	List<Long> getLatencies = Collections.synchronizedList(new ArrayList());
-	@SuppressWarnings("unchecked")
-	List<Long> postLatencies = Collections.synchronizedList(new ArrayList());
+	List<Long> getLatencies = Collections.synchronizedList(new ArrayList<>());
+	List<Long> postLatencies = Collections.synchronizedList(new ArrayList<>());
 
 
 	@Test
